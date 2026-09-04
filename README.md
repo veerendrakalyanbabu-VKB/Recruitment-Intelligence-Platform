@@ -6,6 +6,7 @@ Built for staffing and recruitment teams who need pipeline visibility beyond spr
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://recruitment-analytics-platform-vkb.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![CI](https://github.com/veerendrakalyanbabu-VKB/Recruitment-Intelligence-Platform/actions/workflows/ci.yml/badge.svg)](https://github.com/veerendrakalyanbabu-VKB/Recruitment-Intelligence-Platform/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/Tests-50_passing-2EA44F?style=flat-square)](tests/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.61-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
 
@@ -288,13 +289,13 @@ No API key is required for core analytics — the deterministic analyst works wi
 - Forecasting uses simple trend/average methods — not a full ML forecasting stack
 - Candidate management module is operational, not a full ATS workflow engine
 - Screenshots not yet committed to the repo (use live demo for visuals)
-- GitHub Actions workflow publishes on release; **CI test workflow not yet added**
+- GitHub Actions runs the test suite on pushes and pull requests; package publishing remains release-triggered
 
 ---
 
 ## Roadmap
 
-- [ ] CI workflow (`pytest` on push)
+- [x] CI workflow (`pytest` on push and pull request)
 - [ ] Committed screenshots / short demo GIF
 - [ ] Optional BigQuery export path for cloud analytics
 - [ ] Deeper LLM analyst with structured evidence grounding
